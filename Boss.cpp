@@ -9,6 +9,7 @@ Boss::Boss() {
 		exit(EXIT_FAILURE);
 	}
 	texture.loadFromImage(spritesheet, sf::IntRect(0,0,31,34));
+	sf::FloatRect spriteSize = sprite.getGlobalBounds();
 	sprite.setOrigin(spriteSize.width/4.0,spriteSize.height/4.0);
 	sprite.setTexture(texture);
 	sprite.setColor(sf::Color(255, 130, 0, 255));
