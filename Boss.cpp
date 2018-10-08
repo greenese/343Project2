@@ -8,7 +8,8 @@ Boss::Boss() {
 		std::cerr << "Can't load sprite." << std::endl;
 		exit(EXIT_FAILURE);
 	}
-	texture.loadFromImage(spritesheet, sf::IntRect(0,0,51,54));
+	texture.loadFromImage(spritesheet, sf::IntRect(0,0,31,34));
+	sprite.setOrigin(spriteSize.width/4.0,spriteSize.height/4.0);
 	sprite.setTexture(texture);
 	sprite.setColor(sf::Color(255, 130, 0, 255));
 	this->health = 50;
