@@ -30,11 +30,18 @@ class Monster {
 		int getDamage();
 };
 
-//Extension of Monster class
+//Extensions of Monster class
 class Orc: public Monster {
 	private:
 
 	public:
 		Orc();
+};
+
+class RagingOrc: public Monster {
+	private:
+
+	public:
+		RagingOrc();
 };
 #endif
