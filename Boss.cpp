@@ -10,7 +10,7 @@ Boss::Boss() {
 	}
 	texture.loadFromImage(spritesheet, sf::IntRect(0,0,51,54));
 	sprite.setTexture(texture);
-	sprite.setColor(sf::Color::Orange);
+	sprite.setColor(sf::Color(255, 130, 0, 255));
 	this->health = 50;
 	this->movement_speed = 2;
 }
