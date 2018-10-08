@@ -8,9 +8,9 @@ Boss::Boss() {
 		std::cerr << "Can't load sprite." << std::endl;
 		exit(EXIT_FAILURE);
 	}
-	texture.loadFromImage(spritesheet, sf::IntRect(0,0,33,38));
+	texture.loadFromImage(spritesheet, sf::IntRect(0,0,51,54));
 	sprite.setTexture(texture);
-	sprite.setColor(sf::Color(100, 170, 255, 255));
+	sprite.setColor(sf::Color::Orange);
 	this->health = 50;
 	this->movement_speed = 2;
 }
