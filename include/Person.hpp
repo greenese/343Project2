@@ -13,15 +13,16 @@ class Person {
 		sf::Sprite getSprite();
 		void harm(int hp);
 		void updatePosition(int x, int y);
-		
+		int getX();
+		int getY();
 	private:
 		sf::Sprite sprite;
 		sf::Texture texture;
-		int x;
-		int y;
 		int health;
 		sf::SoundBuffer punchBuffer;
 		sf::Sound punch;
+		int x;
+		int y;
 };
 
 #endif
