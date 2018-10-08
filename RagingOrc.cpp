@@ -10,7 +10,7 @@ RagingOrc::RagingOrc() {
 	}
 	texture.loadFromImage(spritesheet, sf::IntRect(0,0,31,34));
 	sprite.setTexture(texture);
-	sprite.setColor(sf::Color(150, 0, 0, 150));
+	sprite.setColor(sf::Color(200, 0, 0, 150));
 	this->health = 25;
 	this->movement_speed = 10;
 }
