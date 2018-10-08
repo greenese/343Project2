@@ -38,7 +38,7 @@ class Orc: public Monster {
 		Orc();
 };
 
-class RagingOrc: public Monster {
+class Specter: public Monster {
 	private:
 
 	public:
