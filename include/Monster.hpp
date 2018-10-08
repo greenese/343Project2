@@ -44,4 +44,11 @@ class Specter: public Monster {
 	public:
 		Specter();
 };
+
+class Boss: public Monster {
+	private:
+
+	public:
+		Boss();
+};
 #endif

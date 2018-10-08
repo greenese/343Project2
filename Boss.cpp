@@ -3,14 +3,14 @@
 #include "Monster.hpp"
 #include <iostream>
 
-Specter::Specter() {
-	if (!spritesheet.loadFromFile("sprites/monster2sprites.png")) {
+Boss::Boss() {
+	if (!spritesheet.loadFromFile("sprites/monster1sprites.png")) {
 		std::cerr << "Can't load sprite." << std::endl;
 		exit(EXIT_FAILURE);
 	}
 	texture.loadFromImage(spritesheet, sf::IntRect(0,0,31,34));
 	sprite.setTexture(texture);
-	sprite.setColor(sf::Color(120, 0, 250, 180));
-	this->health = 5;
-	this->movement_speed = 7;
+	sprite.setColor(sf::Color(50, 150, 250, 255));
+	this->health = 25;
+	this->movement_speed = 3;
 }
