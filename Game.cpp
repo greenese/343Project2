@@ -215,7 +215,7 @@ void Game::update()
 		}
 		else {
 			monsters.push_back(Orc());
-			monsters.push_back(RagingOrc());
+			monsters.push_back(Specter());
 		}
 	}
 }

@@ -42,6 +42,6 @@ class RagingOrc: public Monster {
 	private:
 
 	public:
-		RagingOrc();
+		Specter();
 };
 #endif
